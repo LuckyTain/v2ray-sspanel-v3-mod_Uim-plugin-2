@@ -164,7 +164,7 @@ downloadV2Ray(){
     rm -rf /tmp/v2ray
     mkdir -p /tmp/v2ray
     colorEcho ${BLUE} "Downloading V2Ray."
-    DOWNLOAD_LINK="https://github.com/dongfangmu/v2ray3664/files/3827407/v2ray-64.zip"
+    DOWNLOAD_LINK="https://github.com/dongfangmu/v2ray3664/releases/download/okk/v2ray-linux-64.zip"
     curl ${PROXY} -L -H "Cache-Control: no-cache" -o ${ZIPFILE} ${DOWNLOAD_LINK}
     if [ $? != 0 ];then
         colorEcho ${RED} "Failed to download! Please check your network or try again."
